@@ -1,0 +1,10 @@
+#!/bin/sh
+# ~/.xprofile
+
+udiskie --tray &
+flameshot &
+nitrogen --restore &
+megasync &
+picom -f &
+redshift-gtk &
+setxkbmap es &
