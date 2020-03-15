@@ -1,23 +1,22 @@
 set $mod Mod4
-set $terminal alacritty
+set $terminal $TERMINAL
 
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
+# Font
 font pango: Cantarell 14
 
 # Gaps
 #gaps inner 10
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
 #hide_edge_borders both
 
 ###### KEYBINDINGS #######
+
+# Reload the configuration file
+bindsym $mod+Shift+c reload
+# Restart i3
+bindsym $mod+Shift+r restart
+# Logs you out of your X session)
+bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 bindsym $mod+Return  exec $terminal
 
@@ -70,35 +69,22 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+p focus parent
 
 bindsym $mod+f       fullscreen toggle
-#bindsym $mod+Shift+f exec urxvt -name fexplorer -e ranger
-#bindsym $mod+w       exec qutebrowser
-#bindsym $mod+m       exec urxvt -name music -e ncmpcpp
-#bindsym $mod+$alt+t  exec wpg -m
-#bindsym $alt+Tab     exec rofi -show window
-#bindsym $mod+t       exec $terminal
 bindsym $mod+Shift+q      kill
-#bindsym $alt+F2      exec rofi -show run
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu "dmenu -i -fn 'Cantarell-16' -nb '#282A36' -sb '#6272A4'"
 
-#bindsym --release Print exec scrot
-#bindsym --release Shift+Print exec scrot -s
-
-# scratchpad terminal
-#bindsym $mod+u [instance = "dropdown"] scratchpad show
-
-###### KEYBINDINGS #######
+###### END KEYBINDINGS #######
 
 #### WORKSPACES ####
-set $ws1 "1 "
-set $ws2 "2 "
+set $ws1 "1"
+set $ws2 "2"
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8 "
-set $ws9 "9 "
-set $ws10 "10 "
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -167,31 +153,7 @@ mode "$mode_session" {
     bindsym Return mode "default"
 }
 
-# set launcher mode
-#set $mode_launcher Launch: [b]rave [g]oogle-chrome-stable [f]thunar [r]anger [z]athura [s]potify [S]team [l]utris [t]elegram [d]iscord
-#bindsym $mod+o mode "$mode_launcher"
-
-# mode launcher
-#mode "$mode_launcher" {
-#    # keybindings for launcher mode
-#    bindsym g exec google-chrome-stable
-#	bindsym b exec brave
-#	#bindsym r exec st -e ranger
-#	bindsym r exec alacritty -e ranger
-#    bindsym f exec thunar
-#    bindsym z exec zathura
-#    bindsym s exec spotify
-#    bindsym Shift+s exec steam
-#    bindsym l exec lutris
-#    bindsym t exec telegram-desktop
-#    bindsym d exec discord
-#    #bindsym w exec wpg
-#
-#    # exit mode launcher
-#    bindsym Escape mode "default"
-#    bindsym Return mode "default"
-#}
-
+# I keep this thing for a Thinkpad setup
 #bindsym $mod+d mode "display"
 #mode "display" {
 #
@@ -260,43 +222,12 @@ assign [class="ICE-SSB-whatsapp"] $ws8
 
 for_window [class="^.*"] border pixel 3
 for_window [class="Yad"] floating enable
-#floating calendar blocklet i3blocks
-#floating wpg
-#for_window [class="Wpg"] floating enable
-#for_window [class="Kazam"] floating enable
-#for_window [class="Nitrogen"] floating enable
-#for_window [class="Galculator"] floating enable
 
 ##### END WINDOWS ######
 
-###### STARTUP ######
-
-#exec --no-startup-id ~/.config/wpg/wp_init.sh
-# exec --no-startup-id "setxkbmap -option caps:escape"
-# exec --no-startup-id volumeicon
-# exec --no-startup-id compton
-# exec --no-startup-id urxvtd
-# exec --no-startup-id dockd --daemon
-# exec --no-startup-id urxvt -name dropdown
-# exec_always --no-startup-id ~/Code/scripts/polybar.sh
-#exec --no-startup-id nm-applet
-#exec_always pamac-tray
-#exec_always xmodmap ~/.Xmodmap
-#exec flameshot
-#exec udiskie &
-#
-#exec nitrogen --restore &
-#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-#exec megasync
-#exec_always picom -f
-#exec redshift-gtk
-#exec_always setxkbmap es
-
-###### END STARTUP ######
-
 #### AUDIO ####
-### use pactl to adjust volume in PulseAudio.
-### i will leave this in case I need it for a keyboard with multimedia keys
+### I will leave this in case I need it for a keyboard with multimedia keys
+### Use pactl to adjust volume in PulseAudio.
 ### set $refresh_i3status killall -SIGUSR1 i3status
 ### bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 ### bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
