@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	j4-dmenu-desktop --dmenu "dmenu -i -fn 'Cantarell-16' -nb '#282A36' -sb '#6272A4'"
+	j4-dmenu-desktop --dmenu "dmenu -i -fn 'Cantarell-12' -nb '#282A36' -sb '#6272A4' -h 30"
 
 # make sxhkd reload its configuration files:
 super + Escape
