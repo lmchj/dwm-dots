@@ -4,19 +4,27 @@
 *.background: #282A36
 *.selforeground: #000000
 *.selbackground: #F1FA8C
+! Blackish colors
 *.color0:     #000000
 *.color8:     #4D4D4D
+! Redish colors
 *.color1:     #FF5555
 *.color9:     #FF6E67
+! Greenish colors
 *.color2:     #50FA7B
 *.color10:    #5AF78E
+! Yellowish colors
 *.color3:     #F1FA8C
 *.color11:    #F4F99D
+! Purpleish colors
 *.color4:     #BD93F9
 *.color12:    #CAA9FA
+! Pinkish colors
 *.color5:     #FF79C6
 *.color13:    #FF92D0
+! Blueish colors
 *.color6:     #8BE9FD
 *.color14:    #9AEDFE
+! Grayish colors
 *.color7:     #BFBFBF
 *.color15:    #E6E6E6
