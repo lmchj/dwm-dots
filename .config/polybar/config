@@ -2,7 +2,7 @@
 background = ${xrdb:background}
 background-alt = ${xrdb:background}
 foreground = ${xrdb:foreground}
-foreground-alt = ${xrdb:color7}
+foreground-alt = ${xrdb:selforeground}
 primary = ${xrdb:color5}
 secondary = ${xrdb:color9}
 alert = ${xrdb:color1}

@@ -22,3 +22,4 @@ bspc rule -a Lutris desktop='^9'
 bspc rule -a TelegramDesktop desktop='^8'
 bspc rule -a ICE-SSB-whatsapp desktop='^8'
 bspc rule -a Zathura state=tiled
+bspc rule -a MEGAsync state=floating
