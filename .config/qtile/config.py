@@ -1,3 +1,5 @@
+# I have not played enough with this
+# I will use it extensively later
 from libqtile.config import Key, Screen, Group, Drag, Click
 from libqtile.command import lazy
 from libqtile import layout, bar, widget

@@ -7,10 +7,6 @@
 
 force_color_prompt=true
 
-alias ls='ls --color=auto'
-#PS1=' \W\$ '
-PS1="\e[0;32m \W \$ \e[m "
+[[ -f ~/.aliases ]] && . ~/.aliases
 
-if [ -f ~/.aliases ]; then
-	    . ~/.aliases
-fi
+PS1="\e[0;32m \W > \e[m "
