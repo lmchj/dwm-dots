@@ -37,7 +37,7 @@ font-2 = siji:pixelsize=12;1
 
 modules-left = bspwm i3
 modules-center = player-mpris-tail
-modules-right = updates-arch date powermenu
+modules-right = date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -122,21 +122,15 @@ exec = ~/.config/polybar/scripts/player-mpris-tail.py -f '{:artist:t18:{artist}:
 tail = true
 format-underline = #6272A4
 
-[module/updates-arch]
-type = custom/script
-exec = ~/.config/polybar/scripts/updates-arch.sh
-interval = 600
-format-underline = #6272A4
-
 [module/date]
 type = internal/date
 interval = 5
 
-date =
-date-alt = " %Y-%m-%d"
+date = " %Y-%m-%d"
+#date-alt = " %Y-%m-%d"
 
 time = %H:%M
-time-alt = %H:%M:%S
+#time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
