@@ -1,0 +1,38 @@
+#!/bin/sh
+
+# Manage your session
+# Suspend
+# Reboot
+# Shutdown
+
+ss() { \
+	choice=$(printf "Yes\\nNo" | dmenu -i -p "Are you sure?" -fn 'Cantarell-12' -nb '#282A36' -sb '#FF5555' -h 30)
+		case "$choice" in
+			Yes) dm-tool lock & systemctl suspend;;
+			No) ;;
+		esac
+	}
+
+rb() { \
+	choice=$(printf "Yes\\nNo" | dmenu -i -p "Are you sure?" -fn 'Cantarell-12' -nb '#282A36' -sb '#FF5555' -h 30)
+		case "$choice" in
+			Yes) reboot;;
+			No) ;;
+		esac
+	}
+
+sd() { \
+	choice=$(printf "Yes\\nNo" | dmenu -i -p "Are you sure?" -fn 'Cantarell-12' -nb '#282A36' -sb '#FF5555' -h 30)
+		case "$choice" in
+			Yes) shutdown now;;
+			No) ;;
+		esac
+	}
+
+session=$(printf "Suspend\\nReboot\\nShutdown" | dmenu -i -p "What do you want?" -fn 'Cantarell-12' -nb '#282A36' -sb '#FF5555' -h 30)
+
+case "$session" in
+	Suspend) ss;;
+	Reboot) rb;;
+	Shutdown) sd;;
+esac

@@ -4,5 +4,7 @@
 # Dot files git track
 alias dot='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 
-# ls color
+# Colorful commands
 alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'

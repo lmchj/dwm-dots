@@ -14,19 +14,9 @@ super + @space
 super + Escape
 	pkill -USR1 -x sxhkd
 
-#
-# session
-#
-
-# suspend
-super + F10
-	dm-tool lock & systemctl suspend
-# reboot
-super + F11
-	reboot
-# shutdown
+# dmenu session manager
 super + F12
-	shutdown now
+	dmenusession
 
 #
 # bspwm hotkeys
