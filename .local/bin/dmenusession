@@ -6,26 +6,26 @@
 # Shutdown
 
 ss() { \
-	choice=$(printf "Yes\\nNo" | dmenu -i -p "Are you sure?" -fn 'Cantarell-12' -nb '#282A36' -sb '#FF5555' -h 30)
+	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'Cantarell-12' -nb '#282A36' -sb '#FF5555' -h 30)
 		case "$choice" in
-			Yes) dm-tool lock & systemctl suspend;;
 			No) ;;
+			Yes) dm-tool lock & systemctl suspend;;
 		esac
 	}
 
 rb() { \
-	choice=$(printf "Yes\\nNo" | dmenu -i -p "Are you sure?" -fn 'Cantarell-12' -nb '#282A36' -sb '#FF5555' -h 30)
+	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'Cantarell-12' -nb '#282A36' -sb '#FF5555' -h 30)
 		case "$choice" in
-			Yes) reboot;;
 			No) ;;
+			Yes) reboot;;
 		esac
 	}
 
 sd() { \
-	choice=$(printf "Yes\\nNo" | dmenu -i -p "Are you sure?" -fn 'Cantarell-12' -nb '#282A36' -sb '#FF5555' -h 30)
+	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'Cantarell-12' -nb '#282A36' -sb '#FF5555' -h 30)
 		case "$choice" in
-			Yes) shutdown now;;
 			No) ;;
+			Yes) shutdown now;;
 		esac
 	}
 

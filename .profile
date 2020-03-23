@@ -7,6 +7,8 @@ export PATH="$PATH:$(du -L "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/
 # Environment variables
 
 # Default programs
+# Text editor
+export EDITOR="vim"
 # Terminal
 export TERMINAL="alacritty"
 # Web browser

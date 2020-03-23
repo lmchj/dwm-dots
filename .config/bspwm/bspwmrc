@@ -3,8 +3,8 @@
 sxhkd &
 $HOME/.config/polybar/launch.sh
 
-NORMAL_COLOR=$(xrdb -query | grep '*.background' | awk '{print $NF}')
-FOCUSED_COLOR=$(xrdb -query | grep '*.color4' | awk '{print $NF}')
+NORMAL_COLOR=$(awk '$1 ~ "*.background" { print $2 }' .Xresources)
+FOCUSED_COLOR=$(awk '$1 ~ "*.color4" { print $2 }' .Xresources)
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
@@ -19,10 +19,10 @@ bspc config focused_border_color	"$FOCUSED_COLOR"
 bspc config normal_border_color		"$NORMAL_COLOR"
 
 bspc rule -a Spotify desktop='^10'
-bspc rule -a Steam desktop='^9' state=floating
-bspc rule -a Lutris desktop='^9'
-bspc rule -a TelegramDesktop desktop='^8'
-bspc rule -a ICE-SSB-whatsapp desktop='^8'
+bspc rule -a Steam desktop='^8' state=floating
+bspc rule -a Lutris desktop='^8'
+bspc rule -a TelegramDesktop desktop='^9'
+bspc rule -a ICE-SSB-whatsapp desktop='^9'
 bspc rule -a Zathura state=tiled
 bspc rule -a MEGAsync state=floating
 bspc rule -a Yad state=floating

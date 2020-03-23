@@ -135,22 +135,6 @@ exec = ~/.config/polybar/scripts/player-mpris-tail.py -f '{:artist:t18:{artist}:
 tail = true
 format-underline = ${colors.green0}
 
-[module/date]
-type = internal/date
-interval = 5
-
-date = " %Y-%m-%d"
-#date-alt = " %Y-%m-%d"
-
-time = %H:%M
-#time-alt = %H:%M:%S
-
-format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.yellow0}
-
-label = %date% %time%
-
 [module/popup-calendar]
 type = custom/script
 exec = ~/.config/polybar/scripts/popup-calendar.sh

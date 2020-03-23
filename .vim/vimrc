@@ -76,5 +76,5 @@ imap <C-v> <Esc>"+p<S-A>
 "toggle goyo
 map <F8> <Esc>:Goyo<CR>
 
-"center cursor
+"cursor
 set scrolloff=999
