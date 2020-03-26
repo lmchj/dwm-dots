@@ -18,3 +18,7 @@ export READER="zathura"
 # File browser
 export FILE_BROWSER="ranger"
 export RANGER_LOAD_DEFAULT_RC=false
+
+# Stardict
+export STARDICT_DATA_DIR="$HOME/.config/stardict"
+export SDCV_HISTSIZE="$HOME/.config/stardict"

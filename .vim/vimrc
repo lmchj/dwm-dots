@@ -57,7 +57,7 @@ filetype plugin indent on
 
 "air-line
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'sol'
+let g:airline_theme = 'dark'
 
 "toggle line number 
 nmap <F2> :set invnumber invrelativenumber<CR>
