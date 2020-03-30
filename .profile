@@ -10,7 +10,7 @@ export PATH="$PATH:$(du -L "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/
 # Text editor
 export EDITOR="vim"
 # Terminal
-export TERMINAL="alacritty"
+export TERMINAL="termite"
 # Web browser
 export BROWSER="firefox"
 # Document reader
@@ -21,4 +21,4 @@ export RANGER_LOAD_DEFAULT_RC=false
 
 # Stardict
 export STARDICT_DATA_DIR="$HOME/.config/stardict"
-export SDCV_HISTSIZE="$HOME/.config/stardict"
+export SDCV_HISTSIZE=0

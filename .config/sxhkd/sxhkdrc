@@ -18,6 +18,10 @@ super + Escape
 super + F12
 	dmenusession
 
+# dmenu mount for usbs and android devices
+super + F11
+	dmenumount
+
 #
 # bspwm hotkeys
 #

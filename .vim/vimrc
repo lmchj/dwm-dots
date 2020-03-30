@@ -36,6 +36,9 @@ Plug 'junegunn/goyo.vim'
 "Colors highlight
 Plug 'ap/vim-css-color'
 
+"Dracula theme
+Plug 'dracula/vim', { 'as': 'dracula' }
+
 call plug#end()
 
 "Numbers at the left, with relative numbering
