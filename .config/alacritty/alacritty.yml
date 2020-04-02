@@ -1,7 +1,6 @@
 scrolling:
   history: 10000
   multiplier: 1
-  auto_scroll: true
 
 #Font configuration
 font:

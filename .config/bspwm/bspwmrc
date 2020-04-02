@@ -22,7 +22,7 @@ bspc rule -a Spotify desktop='^10'
 bspc rule -a Steam desktop='^8' state=floating
 bspc rule -a Lutris desktop='^8'
 bspc rule -a TelegramDesktop desktop='^9'
-bspc rule -a ICE-SSB-whatsapp desktop='^9'
+bspc rule -a whatsapp-nativefier-d52542 desktop='^9'
 bspc rule -a Zathura state=tiled
 bspc rule -a MEGAsync state=floating
 bspc rule -a Yad state=floating

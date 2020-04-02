@@ -1,4 +1,15 @@
-call plug#begin('~/.vim/plugged')
+"~/.config/nvim/init.vim
+
+"let autoload_plug_path='~/.config/nvim/autoload/plug.vim'
+"if !filereadable(autoload_plug_path)
+"	echo "Downloading junegunn/vim-plug to manage plugins..."
+"	silent execute '!curl -fLo ' . autoload_plug_path . '  --create-dirs
+"				\ "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"'
+"	autocmd VimEnter * PlugInstall
+"endif
+"unlet autoload_plug_path
+
+call plug#begin('~/.config/nvim/plugged')
 
 "Snippets tool
 Plug 'sirver/ultisnips'
@@ -11,14 +22,11 @@ Plug 'lervag/vimtex'
     let g:tex_flavor='latex'
     let g:vimtex_view_method='zathura'
     let g:vimtex_quickfix_mode=0
+	let g:vimtex_compiler_progname='nvr'
 
 Plug 'KeitaNakamura/tex-conceal.vim'
     set conceallevel=1
     let g:tex_conceal='abdmg'
-
-""Autocom
-"Plug 'ycm-core/YouCompleteMe'
-"Plug 'jiangmiao/auto-pairs'
 
 "Syntax
 Plug 'othree/yajs.vim'
@@ -60,13 +68,13 @@ filetype plugin indent on
 
 "air-line
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'dark'
+let g:airline_theme = 'wombat'
 
 "toggle line number 
 nmap <F2> :set invnumber invrelativenumber<CR>
 
 "reload vimrc
-nmap <F5> :source ~/.vim/vimrc<CR>
+nmap <F5> :source ~/.config/nvim/init.vim<CR>
 
 "toggle NERDTree
 map <C-n> :NERDTreeToggle<CR>

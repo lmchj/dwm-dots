@@ -8,3 +8,4 @@ megasync &
 picom -f &
 redshift-gtk &
 setxkbmap es &
+dunst &
