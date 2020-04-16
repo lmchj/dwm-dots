@@ -1,9 +1,18 @@
 #!/bin/sh
 
 # Manage your session
+# Lock screen
 # Suspend
 # Reboot
 # Shutdown
+
+lk() { \
+	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'Cantarell-12' -nb '#282A36' -sb '#FF5555' -h 30)
+		case "$choice" in
+			No) ;;
+			Yes) dm-tool lock;;
+		esac
+	}
 
 ss() { \
 	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'Cantarell-12' -nb '#282A36' -sb '#FF5555' -h 30)
@@ -29,9 +38,10 @@ sd() { \
 		esac
 	}
 
-session=$(printf "Suspend\\nReboot\\nShutdown" | dmenu -i -p "What do you want?" -fn 'Cantarell-12' -nb '#282A36' -sb '#FF5555' -h 30)
+session=$(printf "Lock\\nSuspend\\nReboot\\nShutdown" | dmenu -i -p "What do you want?" -fn 'Cantarell-12' -nb '#282A36' -sb '#FF5555' -h 30)
 
 case "$session" in
+	Lock) lk;;
 	Suspend) ss;;
 	Reboot) rb;;
 	Shutdown) sd;;

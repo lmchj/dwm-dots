@@ -9,4 +9,5 @@ force_color_prompt=true
 
 [[ -f ~/.aliases ]] && . ~/.aliases
 
+# PS1
 PS1='\[\e[1;34m\] \W > \[\e[m\] '
