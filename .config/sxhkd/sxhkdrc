@@ -5,10 +5,12 @@
 # terminal emulator
 super + Return
 	$TERMINAL
+super + shift + Return
+	st
 
 # program launcher
 super + @space
-	j4-dmenu-desktop --dmenu "dmenu -i -fn 'Cantarell-12' -nb '#282A36' -sb '#F1FA8C' -h 30"
+	j4-dmenu-desktop --dmenu "dmenu -i -fn 'Cantarell-12' -h 30"
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -21,6 +23,10 @@ super + F12
 # dmenu mount for usbs and android devices
 super + F11
 	dmenumount
+
+# dmenu script to take screenshots
+super + F10
+	dmenuss
 
 #
 # bspwm hotkeys

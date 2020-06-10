@@ -18,7 +18,10 @@ alias dw='cd $HOME/downloads'
 alias ws='cd $HOME/website'
 alias wp='cd $HOME/wallpapers'
 alias ms='cd $HOME/MEGAsync'
-alias ds='[[ -d /run/media/luismario ]] && cd /run/media/luismario'
+alias ds='cd $HOME/lmchj-hdd'
 alias cf='cd $HOME/.config'
 alias dc='cd $HOME/documents'
 alias bk='cd ..'
+
+# Toxic
+alias tx='toxic -f .config/tox/lm.tox'

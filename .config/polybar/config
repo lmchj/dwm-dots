@@ -44,12 +44,12 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = Cantarell:pixelsize=12;1
+font-0 = IBMPlexSansCondensed:pixelsize=12;1
 font-1 = unifont:fontformat=truetype:size=10:antialias=false;0
 font-2 = siji:pixelsize=12;1
 
 modules-left = bspwm
-modules-center = player-mpris-tail
+modules-center = player-mpv-tail player-mpris-tail
 modules-right = popup-calendar
 
 tray-position = right
@@ -93,6 +93,17 @@ type = custom/script
 exec = ~/.config/polybar/scripts/player-mpris-tail.py -f '{:artist:t18:{artist}:}{:artist: - :}{:t20:{title}:}  %{A1:~/.config/polybar/scripts/player-mpris-tail.py previous:} ⏮ %{A} %{A1:~/.config/polybar/scripts/player-mpris-tail.py play-pause:} {icon-reversed} %{A} %{A1:~/.config/polybar/scripts/player-mpris-tail.py next:} ⏭ %{A}'
 tail = true
 format-underline = ${colors.green0}
+
+[module/player-mpv-tail]
+type = custom/script
+exec = ~/.config/polybar/scripts/player-mpv-tail.py -t 42 -c '#abb2bf'
+tail = true
+click-left = ~/.config/polybar/scripts/player-mpv-tail.py -p pause
+click-middle = ~/.config/polybar/scripts/player-mpv-tail.py -p playlist-pos -1
+click-right = ~/.config/polybar/scripts/player-mpv-tail.py -p playlist-pos +1
+scroll-up = ~/.config/polybar/scripts/player-mpv-tail.py -p time-pos -10
+scroll-down = ~/.config/polybar/scripts/player-mpv-tail.py -p time-pos +10
+format-underline = ${colors.magenta0}
 
 [module/popup-calendar]
 type = custom/script

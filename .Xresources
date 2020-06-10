@@ -1,31 +1,74 @@
 ! ~/.Xresources
+! Nord Xresources palette
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
+#define nordfg #F8F8F2
+#define nordbg #282A36
+#define nordsf #000000
+#define nordsb #EBCB8B
+
 ! Dracula Xresources palette
+#define dracula0 #000000
+#define dracula1 #FF5555
+#define dracula2 #50FA7B
+#define dracula3 #F1FA8C
+#define dracula4 #BD93F9
+#define dracula5 #FF79C6
+#define dracula6 #8BE9FD
+#define dracula7 #BFBFBF
+#define dracula8 #4D4D4D
+#define dracula9 #FF6E67
+#define dracula10 #5AF78E
+#define dracula11 #F4F99D
+#define dracula12 #CAA9FA
+#define dracula13 #FF92D0
+#define dracula14 #9AEDFE
+#define dracula15 #E6E6E6
+#define draculafg #F8F8F2
+#define draculabg #282A36
+#define draculasf #000000
+#define draculasb #F1FA8C
+
 ! Special
-*.foreground: #F8F8F2
-*.background: #282A36
-*.selforeground: #000000
-*.selbackground: #F1FA8C
+*.foreground: 		nordfg
+*.background: 		nordbg
+*.selforeground: 	nordsf
+*.selbackground: 	nordsb
 ! Black
-*.color0:     #000000
-*.color8:     #4D4D4D
+*.color0:     		nord0
+*.color8:     		nord8
 ! Red
-*.color1:     #FF5555
-*.color9:     #FF6E67
+*.color1:     		nord1
+*.color9:     		nord9
 ! Green
-*.color2:     #50FA7B
-*.color10:    #5AF78E
+*.color2:     		nord2
+*.color10:    		nord10
 ! Yellow
-*.color3:     #F1FA8C
-*.color11:    #F4F99D
+*.color3:     		nord3
+*.color11:    		nord11
 ! Blue
-*.color4:     #BD93F9
-*.color12:    #CAA9FA
+*.color4:     		nord4
+*.color12:    		nord12
 ! Magenta
-*.color5:     #FF79C6
-*.color13:    #FF92D0
+*.color5:     		nord5
+*.color13:    		nord13
 ! Cyan
-*.color6:     #8BE9FD
-*.color14:    #9AEDFE
+*.color6:     		nord6
+*.color14:    		nord14
 ! White
-*.color7:     #BFBFBF
-*.color15:    #E6E6E6
+*.color7:     		nord7
+*.color15:    		nord15

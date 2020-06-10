@@ -16,10 +16,10 @@ export BROWSER="firefox"
 # Document reader
 export READER="zathura"
 # File browser
-export FILE_BROWSER="ranger"
+export FILE_BROWSER="nnn"
 
 # nnn
-export NNN_OPENER="$HOME/.config/nnn/plugins/nuke"
+#export NNN_OPENER="$HOME/.config/nnn/plugins/nuke"
 
 # Ranger
 export RANGER_LOAD_DEFAULT_RC=false
@@ -27,3 +27,11 @@ export RANGER_LOAD_DEFAULT_RC=false
 # Stardict
 export STARDICT_DATA_DIR="$HOME/.config/stardict"
 export SDCV_HISTSIZE=0
+
+# Kvantum
+export QT_STYLE_OVERRIDE=kvantum
+
+# Cleaning ~/
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"

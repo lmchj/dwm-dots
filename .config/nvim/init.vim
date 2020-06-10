@@ -32,8 +32,8 @@ Plug 'KeitaNakamura/tex-conceal.vim'
 Plug 'othree/yajs.vim'
 
 "Status bar
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 
 "Files tree
 Plug 'scrooloose/nerdtree'
@@ -46,6 +46,9 @@ Plug 'ap/vim-css-color'
 
 "Dracula theme
 Plug 'dracula/vim', { 'as': 'dracula' }
+
+"Nord theme
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
@@ -67,8 +70,8 @@ set shiftwidth=4
 filetype plugin indent on
 
 "air-line
-let g:airline_powerline_fonts = 1
-let g:airline_theme = 'wombat'
+"let g:airline_powerline_fonts = 1
+"let g:airline_theme = 'wombat'
 
 "toggle line number 
 nmap <F2> :set invnumber invrelativenumber<CR>
@@ -89,3 +92,10 @@ map <F8> <Esc>:Goyo<CR>
 
 "cursor
 set scrolloff=999
+
+"status bar
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+"set statusline=(%F)\ %m%r%h%w%y=-%0l/%0L\ %0c%V\ %p%%
+
+"set colorscheme
+colorscheme nord

@@ -28,7 +28,6 @@ keys = [
     # Unsplit = 1 window displayed, like Max layout, but still with
     # multiple stack panes
     Key([mod, "shift"], "Return", lazy.layout.toggle_split()),
-    Key([mod], "Return", lazy.spawn("alacritty")),
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout()),
@@ -37,6 +36,13 @@ keys = [
     Key([mod, "control"], "r", lazy.restart()),
     Key([mod, "control"], "q", lazy.shutdown()),
     Key([mod], "r", lazy.spawncmd()),
+
+    # Need to relocate this stuff
+    Key([mod], "Return", lazy.spawn("termite")),
+    Key([mod], "F12", lazy.spawn("dmenusession")),
+    Key([mod], "F11", lazy.spawn("dmenumount")),
+    Key([mod], "F10", lazy.spawn("dmenuss"))
+    #Key([mod, "control"], "space", lazy.spawn("dmenu -i -fn 'IBMPlexSans-12' -h 30"))
 ]
 
 groups = [Group(i) for i in "1234567890"]
@@ -53,7 +59,7 @@ for i in groups:
 layouts = [
     #layout.Bsp(),
     layout.MonadTall(),
-    #layout.Floating(),
+    layout.Floating(),
     layout.Max(),
     layout.Stack(num_stacks=2),
 
