@@ -1,7 +1,0 @@
-# Config file for udiskie
-
-program_options:
-  tray: auto
-  automount: true
-  file_manager: ranger
-  terminal: alacritty

@@ -1,4 +1,10 @@
 ! ~/.Xresources
+! Font
+*.font: monospace:size=12
+
+! Transparency
+*.alpha: 0.8
+
 ! Nord Xresources palette
 #define nord0 #2E3440
 #define nord1 #3B4252
@@ -48,6 +54,7 @@
 *.background: 		nordbg
 *.selforeground: 	nordsf
 *.selbackground: 	nordsb
+*.color258:			nord4
 ! Black
 *.color0:     		nord0
 *.color8:     		nord8

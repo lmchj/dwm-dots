@@ -42,7 +42,7 @@ keys = [
     Key([mod], "F12", lazy.spawn("dmenusession")),
     Key([mod], "F11", lazy.spawn("dmenumount")),
     Key([mod], "F10", lazy.spawn("dmenuss"))
-    #Key([mod, "control"], "space", lazy.spawn("dmenu -i -fn 'IBMPlexSans-12' -h 30"))
+    #Key([mod, "control"], "space", lazy.spawn("dmenu -i -fn 'IBMPlexSans'"))
 ]
 
 groups = [Group(i) for i in "1234567890"]
