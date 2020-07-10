@@ -1,0 +1,2 @@
+#!/bin/sh
+curl wttr.in/Anahuac,Chihuahua?format=2

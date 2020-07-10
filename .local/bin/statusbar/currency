@@ -1,0 +1,2 @@
+#!/bin/sh
+echo "🇺🇸$(curl mxn.rate.sx/1USD)MXN"

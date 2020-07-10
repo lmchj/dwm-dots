@@ -1,7 +1,6 @@
 #!/bin/sh
 # ~/.xprofile
 
-udiskie --tray &
 nitrogen --restore &
 megasync &
 picom -f &
@@ -9,3 +8,4 @@ redshift-gtk &
 setxkbmap es &
 dunst &
 keepassxc &
+dwmblocks &

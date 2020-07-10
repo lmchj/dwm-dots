@@ -3,16 +3,13 @@
 
 [[ -f ~/.xprofile ]] && . ~/.xprofile
 
-# Loop to not close dwm
+# Loop to not close X session
 while true; do
-		dwm >/dev/null 2>&1
+    # Log stderror to a file 
+    #dwm 2> ~/.dwm.log
+    # No error logging
+    dwm >/dev/null 2>&1
 done
-
-# dwm bar
-#while true
-#do
-#	DATE=$(date "+%a %y-%m-%d %R(%z)")
-#xsetroot -name 
 
 # The WM or DE is the last thing to execute
 exec dwm

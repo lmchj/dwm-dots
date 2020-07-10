@@ -7,7 +7,7 @@
 # Shutdown
 
 lk() { \
-	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'IBMPlexSans' -nb '#282A36' -sb '#FF5555')
+	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'IBMPlexSans')
 		case "$choice" in
 			No) ;;
 			Yes) dm-tool lock;;
@@ -15,7 +15,7 @@ lk() { \
 	}
 
 ss() { \
-	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'IBMPlexSans' -nb '#282A36' -sb '#FF5555')
+	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'IBMPlexSans')
 		case "$choice" in
 			No) ;;
 			Yes) dm-tool lock & systemctl suspend;;
@@ -23,7 +23,7 @@ ss() { \
 	}
 
 rb() { \
-	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'IBMPlexSans' -nb '#282A36' -sb '#FF5555')
+	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'IBMPlexSans')
 		case "$choice" in
 			No) ;;
 			Yes) reboot;;
@@ -31,14 +31,14 @@ rb() { \
 	}
 
 sd() { \
-	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'IBMPlexSans' -nb '#282A36' -sb '#FF5555')
+	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'IBMPlexSans')
 		case "$choice" in
 			No) ;;
 			Yes) shutdown now;;
 		esac
 	}
 
-session=$(printf "Lock\\nSuspend\\nReboot\\nShutdown" | dmenu -i -p "What do you want?" -fn 'IBMPlexSans' -nb '#282A36' -sb '#FF5555')
+session=$(printf "Lock\\nSuspend\\nReboot\\nShutdown" | dmenu -i -p "What do you want?" -fn 'IBMPlexSans')
 
 case "$session" in
 	Lock) lk;;
