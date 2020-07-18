@@ -2,9 +2,6 @@
 ! Font
 *.font: monospace:size=12
 
-! Transparency
-*.alpha: 0.8
-
 ! Nord Xresources palette
 #define nord0 #2E3440
 #define nord1 #3B4252
@@ -57,7 +54,7 @@
 *.color258:			nord4
 ! Black
 *.color0:     		nord1
-*.color8:     		nord3
+*.color8:     		nordfg
 ! Red
 *.color1:     		nord11
 *.color9:     		nord11

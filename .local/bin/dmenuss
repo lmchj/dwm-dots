@@ -5,7 +5,7 @@
 # -imagemagick
 # -dmenu
 
-ss=$(printf "Full screen\\nCrop screen" | dmenu -i -p "Take a screenshot:" -fn "IBMPlexSans")
+ss=$(printf "Full screen\\nCrop screen" | dmenu -i -b -p "Take a screenshot:" -fn "IBMPlexSans")
 
 case "$ss" in
 	Full\ screen) import -window root ~/pictures/ss/ss-$(date '+%y%m%d-%H%M%S').png && notify-send "Screenshot" "Full screen captured and saved at\n~/pictures/ss/ss-$(date '+%y%m%d-%H%M%S')";;
