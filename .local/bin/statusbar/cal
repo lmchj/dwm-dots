@@ -17,4 +17,9 @@ case "$clock" in
 	"12") icon="🕛" ;;
 esac
 
+case $BLOCK_BUTTON in
+	1) notify-send "$(cal)" ;;
+	2) setsid -f "$TERMINAL" -e calcurse ;;
+esac
+
 date "+$icon %a %y-%m-%d %R(%z)"

@@ -10,7 +10,7 @@ export PATH="$PATH:$(du -L "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/
 # Text editor
 export EDITOR="nvim"
 # Terminal
-export TERMINAL="termite"
+export TERMINAL="st"
 # Web browser
 export BROWSER="firefox"
 # Document reader

@@ -33,6 +33,8 @@ display_volume_level = no
 ignore_leading_the = yes
 external_editor = nvim
 use_console_editor = yes
+
+# colors
 empty_tag_color = magenta
 main_window_color = white
 progressbar_color = black:b
