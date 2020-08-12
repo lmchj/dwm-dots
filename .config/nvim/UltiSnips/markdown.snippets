@@ -1,0 +1,132 @@
+global !p
+texMathZones = ['texMathZone'+x for x in ['A', 'AS', 'B', 'BS', 'C', 'CS', 'D', 'DS', 'E', 'ES', 'F', 'FS', 'G', 'GS', 'H', 'HS', 'I', 'IS', 'J', 'JS', 'K', 'KS', 'L', 'LS', 'DS', 'V', 'W', 'X', 'Y', 'Z']]
+texIgnoreMathZones = ['texMathText']
+texMathZoneIds = vim.eval('map('+str(texMathZones)+", 'hlID(v:val)')")
+texIgnoreMathZoneIds = vim.eval('map('+str(texIgnoreMathZones)+", 'hlID(v:val)')")
+ignore = texIgnoreMathZoneIds[0]
+def math():
+	synstackids = vim.eval("synstack(line('.'), col('.') - (col('.')>=2 ? 1 : 0))")
+	try:
+		first = next(i for i in reversed(synstackids) if i in texIgnoreMathZoneIds or i in texMathZoneIds)
+		return first != ignore
+	except StopIteration:
+		return False
+endglobal
+
+#enter to math environments
+snippet mk "Math" wA
+$${1}$`!p
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+	snip.rv = ' '
+else:
+	snip.rv = ''
+`$2
+endsnippet
+
+snippet md "Math" wA
+$$${1}$$`!p
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+	snip.rv = ' '
+else:
+	snip.rv = ''
+`$2
+endsnippet
+
+#some annoying functions
+context "math()"
+snippet // "Fraction" iA
+\\frac{$1}{$2}$0
+endsnippet
+
+#greek alphabet
+snippet alpha "alpha" iA
+\alpha
+endsnippet
+
+snippet beta "beta" iA
+\beta
+endsnippet
+
+snippet gamma "gamma" iA
+\gamma
+endsnippet
+
+snippet delta "delta" iA
+\delta
+endsnippet
+
+snippet epsilon "epsilon" iA
+\varepsilon
+endsnippet
+
+snippet zeta "zeta" iA
+\zeta
+endsnippet
+
+snippet eta "eta" iA
+\eta
+endsnippet
+
+snippet theta "theta" iA
+\theta
+endsnippet
+
+snippet iota "iota" iA
+\iota
+endsnippet
+
+snippet kappa "kappa" iA
+\kappa
+endsnippet
+
+snippet lambda "lambda" iA
+\lambda
+endsnippet
+
+snippet mhu "mhu" iA
+\mu
+endsnippet
+
+snippet nhu "nhu" iA
+\nu
+endsnippet
+
+snippet xhi "xhi" iA
+\xi
+endsnippet
+
+snippet pih "pih" iA
+\pi
+endsnippet
+
+snippet rho "rho" iA
+\rho
+endsnippet
+
+snippet sigma "sigma" iA
+\sigma
+endsnippet
+
+snippet tau "tau" iA
+\tau
+endsnippet
+
+snippet upsilon "upsilon" iA
+\upsilon
+endsnippet
+
+snippet phih "phih" iA
+\phi
+endsnippet
+
+snippet chhi "chhi" iA
+\chi
+endsnippet
+
+snippet psih "psih" iA
+\psi
+endsnippet
+
+snippet omega "omega" iA
+\omega
+endsnippet

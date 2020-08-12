@@ -1,7 +1,9 @@
 #!/bin/sh
 # ~/.xprofile
 
+mpd &
 nitrogen --random --set-zoom-fill &
+flameshot &
 megasync &
 picom -f &
 redshift-gtk &

@@ -1,6 +1,4 @@
 ! ~/.Xresources
-! Font
-*.font: monospace:size=12
 
 ! Nord Xresources palette
 #define nord0 #2E3440
@@ -46,15 +44,19 @@
 #define draculasf #000000
 #define draculasb #F1FA8C
 
+! black & white
+#define black #000000
+#define white #FFFFFF
+#define magenta #FF00FF
+! black & white
+
 ! Special
-*.color256: 		nord4
-*.color257: 		nord0
-*.selforeground: 	nordsf
-*.selbackground: 	nordsb
-*.color258:			nord4
+*.color256: 		black
+*.color257: 		white
+*.color258:			magenta
 ! Black
 *.color0:     		nord1
-*.color8:     		nordfg
+*.color8:     		nord3
 ! Red
 *.color1:     		nord11
 *.color9:     		nord11

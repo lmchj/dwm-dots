@@ -18,7 +18,7 @@ case "$clock" in
 esac
 
 case $BLOCK_BUTTON in
-	1) notify-send "$(cal)" ;;
+	1) notify-send -u critical "$(cal --color=always)" ;;
 	2) setsid -f "$TERMINAL" -e calcurse ;;
 esac
 

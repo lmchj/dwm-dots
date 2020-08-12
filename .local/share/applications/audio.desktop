@@ -1,4 +1,4 @@
 [Desktop Entry]
 Type=Application
 Name=Media player
-Exec=/usr/bin/cmus %u
+Exec=/usr/bin/mpd %u
