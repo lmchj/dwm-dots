@@ -1,14 +1,5 @@
 "~/.config/nvim/init.vim
 
-"let autoload_plug_path='~/.config/nvim/autoload/plug.vim'
-"if !filereadable(autoload_plug_path)
-"	echo "Downloading junegunn/vim-plug to manage plugins..."
-"	silent execute '!curl -fLo ' . autoload_plug_path . '  --create-dirs
-"				\ "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"'
-"	autocmd VimEnter * PlugInstall
-"endif
-"unlet autoload_plug_path
-
 call plug#begin('~/.config/nvim/plugged')
 
 "Snippets tool
@@ -16,9 +7,6 @@ Plug 'sirver/ultisnips'
     let g:UltiSnipsExpandTrigger = '<tab>'
     let g:UltiSnipsJumpForwardTrigger = '<tab>'
     let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
-
-"conceal
-set conceallevel=1
 
 "TeX support
 Plug 'lervag/vimtex'
@@ -69,13 +57,14 @@ Plug 'junegunn/goyo.vim'
 "Colors highlight
 Plug 'ap/vim-css-color'
 
-"Dracula theme
+"color schemes
 Plug 'dracula/vim', { 'as': 'dracula' }
-
-"Nord theme
 Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
+
+"conceal
+set conceallevel=1
 
 "autocompletion
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
@@ -112,7 +101,6 @@ nmap <F5> :source ~/.config/nvim/init.vim<CR>
 "NERDTree
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
 
 "copy and paste from system clipboard
 "requires gvim or something that enables system clipboard
