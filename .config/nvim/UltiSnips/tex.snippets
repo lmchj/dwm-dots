@@ -41,6 +41,25 @@ snippet template "Basic template" b
 \end{document}
 endsnippet
 
+snippet letter "Letter template" b
+\documentclass[letterpaper]{letter}
+\usepackage{hyperref}
+\signature{$1}
+\address{$2}
+\begin{document}
+
+\begin{letter}{$3}
+
+\opening{$4:}
+
+$6
+
+\closing{$5,}
+
+\end{letter}
+\end{document}
+endsnippet
+
 # some environments
 snippet beg "begin{} / end{}" bA
 \\begin{$1}

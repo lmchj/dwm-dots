@@ -31,3 +31,4 @@ alias tx='toxic -f .config/tox/lm.tox'
 
 # Music
 alias mp='mpd && ncmpcpp'
+alias mp3dpl='youtube-dl -x --yes-playlist --audio-format mp3'
