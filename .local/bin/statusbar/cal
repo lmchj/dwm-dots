@@ -22,4 +22,4 @@ case $BLOCK_BUTTON in
 	2) setsid -f "$TERMINAL" -e calcurse ;;
 esac
 
-date "+$icon %a %y-%m-%d %R(%z)"
+date "+$icon %a %y-%m-%d %R %Z(%z)"

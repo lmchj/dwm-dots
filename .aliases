@@ -18,13 +18,15 @@ alias rm='rm -v'
 
 # Change to specific directories
 alias dw='cd $HOME/downloads'
-alias ws='cd $HOME/website'
-alias wp='cd $HOME/wallpapers'
+alias ws='cd $HOME/documents/website'
+alias wp='cd $HOME/pictures/wallpapers'
 alias ms='cd $HOME/MEGAsync'
-alias ds='cd $HOME/lmchj-hdd'
 alias cf='cd $HOME/.config'
 alias dc='cd $HOME/documents'
 alias bk='cd ..'
+alias m1='cd $HOME/mnt/mp1'
+alias m2='cd $HOME/mnt/mp2'
+alias m3='cd $HOME/mnt/mp3'
 
 # Toxic
 alias tx='toxic -f .config/tox/lm.tox'

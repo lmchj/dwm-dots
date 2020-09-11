@@ -10,7 +10,7 @@ super + shift + Return
 
 # program launcher
 super + @space
-	dmenu_run -i -fn 'Cantarell-12' -h 30
+	dmenu_run
 
 # make sxhkd reload its configuration files:
 super + Escape

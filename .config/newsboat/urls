@@ -1,15 +1,29 @@
+---PODCASTS---
+https://feeds.feedburner.com/dancarlin/commonsense?format=xml
+https://dchhaddendum.libsyn.com/rss
+https://partiallyexaminedlife.com/feed/podcast/rss
+https://rss.art19.com/brooklyn-nine-nine-the-podcast
+https://feeds.feedburner.com/dancarlin/history?format=xml
+https://notrelated.libsyn.com/rss
+https://www.omnycontent.com/d/playlist/aaea4e69-af51-495e-afc9-a9760146922b/75a86d39-9e0e-4e9a-b948-aae301805fe6/514362cf-31b4-4ed2-af40-aae301805ffd/podcast.rss
+https://www.numberphile.com/podcast?format=rss
+https://video-api.wsj.com/podcast/rss/wsj/wsj-the-future-of-everything
+https://anchor.fm/s/db39d38/podcast/rss
+https://feeds.soundcloud.com/users/soundcloud:users:235277114/sounds.rss
+
+---MATHS---
+https://terrytao.wordpress.com/rss.xml
+https://johncarlosbaez.wordpress.com/rss.xml
+https://math-faq.com/feed/
+https://gowers.wordpress.com/feed/
+https://www.galoisrepresentations.com/feed/
+https://mathenchant.wordpress.com/feed/
+https://ncatlab.org/nlab/atom_with_headlines
+
 ---BLOGS---
 https://lmchaparroj.xyz/rss.xml
 https://lukesmith.xyz/rss.xml
-https://terrytao.wordpress.com/rss.xml
-https://johncarlosbaez.wordpress.com/rss.xml
-
----BOARDS---
-https://boards.4channel.org/sci/index.rss
-https://www.reddit.com/r/mathematics/.rss
-https://www.reddit.com/r/math/.rss
-https://www.reddit.com/r/philosophy/.rss
-https://boards.4channel.org/his/index.rss
+https://www.williamjbowman.com/feeds/all.atom.xml
 
 ---NEWS---
 http://feeds.bbci.co.uk/news/world/latin_america/rss.xml
@@ -18,14 +32,6 @@ https://www.reddit.com/r/news/.rss
 https://boards.4channel.org/news/index.rss
 https://www.churchofsatan.com/news/latest-news/rss
 https://www.animalpolitico.com/rss
-
----PODCASTS---
-https://feeds.feedburner.com/dancarlin/commonsense?format=xml
-https://dchhaddendum.libsyn.com/rss
-https://partiallyexaminedlife.com/feed/podcast/rss
-https://rss.art19.com/brooklyn-nine-nine-the-podcast
-https://feeds.feedburner.com/dancarlin/history?format=xml
-https://notrelated.libsyn.com/rss
 
 ---JOURNALS---
 http://rss.sciencedirect.com/publication/science/25900374
@@ -40,7 +46,7 @@ https://www.newyorker.com/feed/everything
 https://www.newyorker.com/feed/news
 https://www.newyorker.com/feed/tech
 
----YOUTUBE---
+---(YOU/PEER)TUBE---
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA
 https://www.youtube.com/feeds/videos.xml?user=markyv69
 https://www.youtube.com/feeds/videos.xml?user=bgfilms
@@ -60,6 +66,4 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCBxr1muciHdRtlygUhruARw
 https://www.youtube.com/feeds/videos.xml?channel_id=UCcIvNGMBSQWwo1v3n-ZRBCw
 https://www.youtube.com/feeds/videos.xml?user=lethalcrysischannel
 https://www.youtube.com/feeds/videos.xml?channel_id=UCRjSO-juFtngAeJGJRMdIZw
-
----PEERTUBE---
 https://videos.lukesmith.xyz/feeds/videos.xml?accountId=3

@@ -19,7 +19,7 @@ export READER="zathura"
 export FILE_BROWSER="nnn"
 
 # nnn
-#export NNN_OPENER="$HOME/.config/nnn/plugins/nuke"
+export NNN_OPENER=xdg-open
 
 # Ranger
 export RANGER_LOAD_DEFAULT_RC=false
