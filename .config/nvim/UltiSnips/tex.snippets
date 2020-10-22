@@ -34,10 +34,18 @@ snippet template "Basic template" b
 	\import{./figures/}{#1.pdf_tex}
 }
 
+\usepackage[
+backend=biber,
+style=alphabetic
+]{biblatex}
+\addbibresource{$1.bib}
+
 \pdfsuppresswarningpagegroup=1
 
 \begin{document}
-	$0
+	$3
+
+	\printbibliography[title={$2}]
 \end{document}
 endsnippet
 
