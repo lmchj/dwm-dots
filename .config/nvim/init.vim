@@ -58,7 +58,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'ap/vim-css-color'
 
 "color schemes
-Plug 'dracula/vim', { 'as': 'dracula' }
+"Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
