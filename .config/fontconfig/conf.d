@@ -5,6 +5,7 @@
 		<family>serif</family>
 		<prefer>
 			<family>IBMPlexSerif</family>
+			<family>OpenMoji-Color</family>
 			<family>Noto Color Emoji</family>
 		</prefer>
 	</alias>
@@ -12,6 +13,7 @@
 		<family>sans-serif</family>
 		<prefer>
 			<family>IBMPlexSansCondensed</family>
+			<family>OpenMoji-Color</family>
 			<family>Noto Color Emoji</family>
 		</prefer>
 	</alias>
@@ -19,6 +21,7 @@
 		<family>sans</family>
 		<prefer>
 			<family>IBMPlexSans</family>
+			<family>OpenMoji-Color</family>
 			<family>Noto Color Emoji</family>
 		</prefer>
 	</alias>
@@ -26,7 +29,7 @@
 		<family>monospace</family>
 		<prefer>
 			<family>IBMPlexMono</family>
-			<family>Inconsolata for Powerline</family>
+			<family>Terminus</family>
 		</prefer>
 	</alias>
 </fontconfig>

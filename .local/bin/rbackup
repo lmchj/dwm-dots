@@ -1,0 +1,7 @@
+#!/bin/sh
+# rsync to backup my files to my external hard drive
+rsync -avr --delete-after /home/elem/musica/ /mnt/mp1/media/music/
+rsync -avr --delete-after /home/elem/imagenes/wallpapers/ /mnt/mp1/wallpapers/
+rsync -avr --delete-after /home/elem/documentos/books/ /mnt/mp1/books/
+rsync -avr --delete-after /home/elem/documentos/pass.kdbx /mnt/mp1/pass.kdbx
+rsync -avr --delete-after /home/elem/documentos/notes/ /mnt/mp1/notes/

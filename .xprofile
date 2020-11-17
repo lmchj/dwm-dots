@@ -2,12 +2,11 @@
 # ~/.xprofile
 
 mpd &
-nitrogen --random --set-zoom-fill &
-flameshot &
-megasync &
 picom -f &
-redshift-gtk &
-dunst &
-keepassxc &
-deluge &
 dwmblocks &
+#polybar &
+xbindkeys &
+redshift &
+xwallpaper --output all --zoom $(find $HOME/img/wallpapers/ | shuf -n 1) &
+#keepassxc &
+dunst &

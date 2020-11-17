@@ -61,6 +61,10 @@ Plug 'ap/vim-css-color'
 "Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'arcticicestudio/nord-vim'
 
+"Indent guides
+Plug 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_enable_on_vim_startup = 1
+
 call plug#end()
 
 "conceal
@@ -77,7 +81,7 @@ set number relativenumber
 "setlocal spell
 autocmd FileType markdown setlocal spell
 autocmd FileType tex setlocal spell
-set spelllang=es_mx,en_us
+set spelllang=es_mx,en_uk
 " spell correction
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 

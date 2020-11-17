@@ -2,6 +2,9 @@
 # ~/.bashrc
 #
 
+# Add ~/.local/bin to PATH
+export PATH="$PATH:$(du -L "$HOME/.local/bin" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 

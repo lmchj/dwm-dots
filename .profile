@@ -1,16 +1,14 @@
 #!/bin/sh
 # ~/.profile
 
-# Add ~/.local/bin to PATH
-export PATH="$PATH:$(du -L "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
-
 # Environment variables
 
 # Default programs
 # Text editor
 export EDITOR="nvim"
 # Terminal
-export TERMINAL="st"
+export TERMINAL="termite"
+#export TERMINAL="st"
 # Web browser
 export BROWSER="firefox"
 # Document reader
@@ -20,9 +18,6 @@ export FILE_BROWSER="nnn"
 
 # nnn
 export NNN_OPENER=xdg-open
-
-# Ranger
-export RANGER_LOAD_DEFAULT_RC=false
 
 # Stardict
 export STARDICT_DATA_DIR="$HOME/.config/stardict"
