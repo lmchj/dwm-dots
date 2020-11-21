@@ -14,10 +14,10 @@ xwallpaper --output all --zoom $(find $HOME/img/wallpapers/ | shuf -n 1) &
 dunst &
 xscreensaver -no-splash &
 
-#dwm loop
-#while true; do
-#	dwm > /dev/null 2>&1
-#done
+dwm loop
+while true; do
+	dwm > /dev/null 2>&1
+done
 
 # The WM or DE is the last thing to execute
 exec dwm
