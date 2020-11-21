@@ -17,7 +17,7 @@ export READER="zathura"
 export FILE_BROWSER="nnn"
 
 # nnn
-export NNN_OPENER=xdg-open
+export NNN_OPENER="~/.config/nnn/plugins/nuke"
 
 # Stardict
 export STARDICT_DATA_DIR="$HOME/.config/stardict"
