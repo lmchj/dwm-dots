@@ -7,7 +7,7 @@
 # Text editor
 export EDITOR="nvim"
 # Terminal
-export TERMINAL="termite"
+export TERM="termite"
 #export TERMINAL="st"
 # Web browser
 export BROWSER="firefox"

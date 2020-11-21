@@ -6,7 +6,8 @@
 picom -f &
 dwmblocks &
 #polybar &
-xbindkeys &
+#xbindkeys &
+sxhkd &
 redshift &
 xwallpaper --output all --zoom $(find $HOME/img/wallpapers/ | shuf -n 1) &
 #keepassxc &
