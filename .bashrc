@@ -15,7 +15,7 @@ if [ $(id -u) -eq 0 ];
 then #root
   PS1='\033[01;31m\]\[$(tput setaf 1)\]\u@\h:\w #\[$(tput sgr0)\] '
 else #normal
-  PS1='\[\[\e[1;32m\]\W \[\e[1;31m\]> \[\e[m\] '
+	PS1='\[\[\e[1;35m\]\W \[\e[1;32m\]: \[\e[m\]'
 fi
 
 # vi mode
@@ -42,6 +42,8 @@ export FILE_BROWSER="nnn"
 
 # nnn
 export NNN_OPENER="/home/elem/.config/nnn/plugins/nuke"
+export NNN_COLORS="2136"
+export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 
 # Kvantum
 export QT_STYLE_OVERRIDE=kvantum
@@ -51,12 +53,12 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
-export GTK2_RC_FILES='"$XDG_CONFIG_HOME"/gtk-2.0/gtkrc'
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 export LESSHISTFILE=-
-export NPM_CONFIG_USERCONFIG='"$XDG_CONFIG_HOME"/npm/npmrc'
-export export NVM_DIR='"$XDG_DATA_HOME"/nvm'
-export TERMINFO='"$XDG_DATA_HOME"/terminfo'
-export TERMINFO_DIRS='"$XDG_DATA_HOME"/terminfo:/usr/share/terminfo'
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
+export NVM_DIR="$XDG_DATA_HOME/nvm"
+export TERMINFO="$XDG_DATA_HOME/terminfo"
+export TERMINFO_DIRS="$XDG_DATA_HOME/terminfo:/usr/share/terminfo"
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 

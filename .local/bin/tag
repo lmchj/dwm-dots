@@ -54,6 +54,6 @@ Total=$total
 Date=$date
 Genre=$genre
 Comment=$comment" | opustags -i -S "$file" ;;
-	*.mp3) id3v2 --artist "$artist" --album "$album" --song "$title" --track "$track/$total" --year "$date" "$file" ;;
+	*.mp3) id3v2 --artist "$artist" --album "$album" --song "$title" --track "$track/$total" --year "$date" --genre "$genre" "$file" ;;
 	*) echo "File type not implemented yet." ;;
 esac

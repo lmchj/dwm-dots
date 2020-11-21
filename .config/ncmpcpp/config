@@ -35,9 +35,9 @@ external_editor = nvim
 use_console_editor = yes
 
 # colors
-#empty_tag_color = magenta
-#main_window_color = white
-#progressbar_color = black:b
-#progressbar_elapsed_color = blue:b
-#statusbar_color = red
-#statusbar_time_color = cyan:b
+empty_tag_color = magenta
+main_window_color = white
+progressbar_color = black:b
+progressbar_elapsed_color = blue:b
+statusbar_color = red
+statusbar_time_color = cyan:b
