@@ -30,7 +30,7 @@ color article cyan default
 browser linkhandler
 macro , open-in-browser
 macro v set browser "setsid nohup mpv"; open-in-browser ; set browser linkhandler
-macro w set browser "brave"; open-in-browser ; set browser linkhandler
+macro w set browser "firefox"; open-in-browser ; set browser linkhandler
 
 download-path "~/downloads/newsboat"
 player "mpv"

@@ -25,8 +25,11 @@ Plug 'plasticboy/vim-markdown'
 	let g:tex_conceal = "abdmg"
 	let g:vim_markdown_math = 2
 
+"HTML
+"Plug 'othree/html5.vim'
+
 "R
-Plug 'jalvesaq/Nvim-R'
+"Plug 'jalvesaq/Nvim-R'
 
 "csv
 Plug 'chrisbra/csv.vim'
@@ -43,7 +46,7 @@ set completeopt=noinsert,menuone,noselect
 " sources
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
-Plug 'gaalcaras/ncm-R'
+"Plug 'gaalcaras/ncm-R'
 
 "Syntax
 Plug 'othree/yajs.vim'
@@ -70,10 +73,6 @@ call plug#end()
 "conceal
 set conceallevel=1
 
-"autocompletion
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
 "Numbers at the left, with relative numbering
 set number relativenumber
 
@@ -81,6 +80,7 @@ set number relativenumber
 "setlocal spell
 autocmd FileType markdown setlocal spell
 autocmd FileType tex setlocal spell
+autocmd FileType html setlocal spell
 set spelllang=es_mx,en_uk
 " spell correction
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
@@ -115,7 +115,7 @@ imap <C-v> <Esc>"+p<S-A>
 map <F8> <Esc>:Goyo<CR>
 
 "cursor
-set scrolloff=999
+set scrolloff=5
 
 "status bar
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P

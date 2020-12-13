@@ -12,14 +12,20 @@ super + shift + Return
 super + p
 	dmenu_run
 
+XF86MicMute
+	pamixer -t --source 0
+
 XF86AudioMute
-	pamixer -t; pkill -RTMIN+10 dwmblocks
+	pamixer -t
+	#; pkill -RTMIN+10 dwmblocks
 
 XF86AudioLowerVolume
-	pamixer --allow-boost -d 3; pkill -RTMIN+10 dwmblocks
+	pamixer --allow-boost -d 3
+	#; pkill -RTMIN+10 dwmblo5
 
 XF86AudioRaiseVolume
-	pamixer --allow-boost -i 3; pkill -RTMIN+10 dwmblocks
+	pamixer --allow-boost -i 5
+	#; pkill -RTMIN+10 dwmblocks
 
 XF86AudioStop
 	mpc stop
@@ -35,6 +41,11 @@ XF86AudioNext
 
 XF86ScreenSaver
 	xscreensaver-command --lock
+
+Print
+	flameshot gui
+
+################
 #No ando usando bspwm, quiza borre esto luego
 ##
 ## bspwm hotkeys

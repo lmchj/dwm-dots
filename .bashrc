@@ -8,8 +8,6 @@
 
 force_color_prompt=true
 
-[[ -f ~/.aliases ]] && . ~/.aliases
-
 # PS1
 if [ $(id -u) -eq 0 ];
 then #root
@@ -41,9 +39,12 @@ export READER="zathura"
 export FILE_BROWSER="nnn"
 
 # nnn
-export NNN_OPENER="/home/elem/.config/nnn/plugins/nuke"
+#export NNN_OPENER="/home/elem/.config/nnn/plugins/nuke"
+export NNN_OPENER="xdg-open"
 export NNN_COLORS="2136"
-export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
+export NNN_FCOLORS="c1e2e62e006033f7c6d6abc4"
+export NNN_PLUG="i:imgview"
+export NNN_FIFO=/tmp/nnn.fifo
 
 # Kvantum
 export QT_STYLE_OVERRIDE=kvantum
@@ -91,7 +92,6 @@ alias bk='cd ..'
 alias m1='cd $HOME/mnt/mp1'
 alias m2='cd $HOME/mnt/mp2'
 alias m3='cd $HOME/mnt/mp3'
-alias repos='printf "Mis repositorios personales.\nBuilds y programas en desarrollo.\n\n" && function _(){ cd $HOME/rep/$1 && printf "\tAhora en: $HOME/rep/$1\n\n" && ls -l; }; _'
 
 # Toxic
 alias tx='toxic -f .config/tox/lm.tox'
@@ -101,10 +101,17 @@ alias mp='mpd && ncmpcpp'
 alias mp3dpl='youtube-dl -x --yes-playlist --audio-format mp3'
 
 # nnn
-alias nnn='nnn -d'
+alias nnn='nnn -de'
 
 # Mount things
 alias mount-hdd='sudo mount -U 2699CF1C708EBDE8 && echo "Disco duro externo montado exitosamente en ~/mnt/mp1"'
+
+# some stuff
+alias repos='. repos'
+alias notas='. notas'
+
+# workarounds
+alias obs='LIBGL_ALWAYS_SOFTWARE=1 obs'
 
 # Clean up
 alias abook='abook --config "$XDG_CONFIG_HOME"/abook/abookrc --datafile "$XDG_DATA_HOME"/abook/addressbook'

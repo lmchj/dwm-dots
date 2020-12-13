@@ -5,7 +5,8 @@
 		<family>serif</family>
 		<prefer>
 			<family>IBMPlexSerif</family>
-			<family>OpenMoji-Color</family>
+			<family>Twemoji</family>
+			<family>OpenMoji</family>
 			<family>Noto Color Emoji</family>
 		</prefer>
 	</alias>
@@ -13,7 +14,8 @@
 		<family>sans-serif</family>
 		<prefer>
 			<family>IBMPlexSansCondensed</family>
-			<family>OpenMoji-Color</family>
+			<family>Twemoji</family>
+			<family>OpenMoji</family>
 			<family>Noto Color Emoji</family>
 		</prefer>
 	</alias>
@@ -21,7 +23,8 @@
 		<family>sans</family>
 		<prefer>
 			<family>IBMPlexSans</family>
-			<family>OpenMoji-Color</family>
+			<family>Twemoji</family>
+			<family>OpenMoji</family>
 			<family>Noto Color Emoji</family>
 		</prefer>
 	</alias>

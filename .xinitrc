@@ -2,7 +2,7 @@
 # ~/.xinitrc
 
 #startup programs
-#mpd &
+mpd &
 picom -f &
 dwmblocks &
 #polybar &
@@ -14,7 +14,7 @@ xwallpaper --output all --zoom $(find $HOME/img/wallpapers/ | shuf -n 1) &
 dunst &
 xscreensaver -no-splash &
 
-dwm loop
+#dwm loop
 while true; do
 	dwm > /dev/null 2>&1
 done
