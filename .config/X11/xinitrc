@@ -13,6 +13,7 @@ xwallpaper --output all --zoom $(find $HOME/img/wallpapers/ | shuf -n 1) &
 #keepassxc &
 dunst &
 xscreensaver -no-splash &
+autorandr --change
 
 #dwm loop
 while true; do

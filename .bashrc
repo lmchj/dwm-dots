@@ -117,7 +117,13 @@ alias obs='LIBGL_ALWAYS_SOFTWARE=1 obs'
 alias abook='abook --config "$XDG_CONFIG_HOME"/abook/abookrc --datafile "$XDG_DATA_HOME"/abook/addressbook'
 alias mbsync='mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc'
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
+alias irssi='irssi --config="$XDG_CONFIG_HOME"/irssi/config --home="$XDG_DATA_HOME"/irssi'
 
 #lmao
 #alias lmaoadd='function _() { pacman -S $1 && echo -e "$(tr ' ' '\n' $1)"; }; _ >> rep/lmao/ppacman.txt'
 #alias daur='function _() { echo "Clonando repositorio..." && cd $HOME/prg/aur/ && git clone https://aur.archlinux.org/$1.git && cd $HOME/prg/aur/$1 && echo "Construyendo e instalando..." && makepkg -si; }; _'
+
+# x server
+if [[ "$(tty)" = "/dev/tty1" ]]; then
+	pgrep dwm || startx "$XDG_CONFIG_HOME/X11/xinitrc"
+fi

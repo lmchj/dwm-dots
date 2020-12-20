@@ -10,22 +10,19 @@ super + shift + Return
 	termite
 
 super + p
-	dmenu_run
+	dmenu_run -m 0
 
 XF86MicMute
 	pamixer -t --source 0
 
 XF86AudioMute
-	pamixer -t
-	#; pkill -RTMIN+10 dwmblocks
+	pamixer -t; pkill -RTMIN+10 dwmblocks
 
 XF86AudioLowerVolume
-	pamixer --allow-boost -d 3
-	#; pkill -RTMIN+10 dwmblo5
+	pamixer --allow-boost -d 5; pkill -RTMIN+10 dwmblocks
 
 XF86AudioRaiseVolume
-	pamixer --allow-boost -i 5
-	#; pkill -RTMIN+10 dwmblocks
+	pamixer --allow-boost -i 5; pkill -RTMIN+10 dwmblocks
 
 XF86AudioStop
 	mpc stop

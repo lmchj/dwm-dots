@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.44 for elem on Sun Nov 15 16:31:00 2020.
+# Written by xscreensaver-demo 5.44 for elem on Fri Dec 18 22:40:36 2020.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
@@ -26,8 +26,8 @@ ignoreUninstalledPrograms:False
 font:		*-medium-r-*-140-*-m-*
 dpmsEnabled:	False
 dpmsQuickOff:	False
-dpmsStandby:	2:00:00
-dpmsSuspend:	2:00:00
+dpmsStandby:	0:05:00
+dpmsSuspend:	0:10:00
 dpmsOff:	4:00:00
 grabDesktopImages:  False
 grabVideoFrames:    False
