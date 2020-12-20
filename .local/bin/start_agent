@@ -1,0 +1,20 @@
+#!/bin/sh
+SSH_ENV=$HOME/.ssh/agent-environment
+# initialize ssh agent and adding credentials
+echo "Inicializando nuevo Agente SSH..."
+/usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+	echo succeeded
+		chmod 600 "${SSH_ENV}"
+			. "${SSH_ENV}" > /dev/null
+				/usr/bin/ssh-add;
+
+# source ssh settings if applicable
+if [ -f "${SSH_ENV}" ]; then
+	. "${SSH_ENV}" > /dev/null
+		#ps ${SSH_AGENT_PID} does not work under cywgin
+		ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+			start_agent;
+		}
+else
+	start_agent;
+fi

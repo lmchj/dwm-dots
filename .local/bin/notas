@@ -1,0 +1,9 @@
+#!/bin/sh
+printf "Mis notas y apuntes de clase.\\n"
+
+ls -drc ~/dox/notes/*/ | grep -o '[a-z]*\/$' |  nl
+read -erp "Selecciona una disciplina por su numero o presiona ctrl-c para cancelar. " num
+chosen="$(ls -drc ~/dox/notes/*/ | nl | grep -w $num | grep -o '[a-z]*\/$')"
+printf "\t\e[1;36m$chosen\e[m\n"
+cd ~/dox/notes/"$chosen"/
+ls
