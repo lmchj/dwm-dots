@@ -7,38 +7,38 @@
 # Shutdown
 
 lk() { \
-	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'IBMPlexSans')
+	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?")
 		case "$choice" in
 			No) ;;
-			Yes) dm-tool lock;;
+			Yes) xscreensaver-command -lock;;
 		esac
 	}
 
 ss() { \
-	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'IBMPlexSans')
+	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?")
 		case "$choice" in
 			No) ;;
-			Yes) dm-tool lock & systemctl suspend;;
+			Yes) xscreensaver-command -lock & systemctl suspend;;
 		esac
 	}
 
 rb() { \
-	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'IBMPlexSans')
+	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?")
 		case "$choice" in
 			No) ;;
-			Yes) reboot;;
+			Yes) loginctl reboot;;
 		esac
 	}
 
 sd() { \
-	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?" -fn 'IBMPlexSans')
+	choice=$(printf "No\\nYes" | dmenu -i -p "Are you sure?")
 		case "$choice" in
 			No) ;;
-			Yes) shutdown now;;
+			Yes) loginctl poweroff;;
 		esac
 	}
 
-session=$(printf "Lock\\nSuspend\\nReboot\\nShutdown" | dmenu -i -p "What do you want?" -fn 'IBMPlexSans')
+session=$(printf "Lock\\nSuspend\\nReboot\\nShutdown" | dmenu -i -p "What do you want?")
 
 case "$session" in
 	Lock) lk;;
