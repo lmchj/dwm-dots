@@ -24,6 +24,8 @@ XF86AudioLowerVolume
 XF86AudioRaiseVolume
 	pamixer --allow-boost -i 5; pkill -RTMIN+10 dwmblocks
 
+#XF86AudioMicMute
+
 XF86AudioStop
 	mpc stop
 
@@ -39,8 +41,11 @@ XF86AudioNext
 XF86ScreenSaver
 	xscreensaver-command --lock
 
-Print
-	flameshot gui
+{_,shift +} Print
+	flameshot {gui, full -p ~/img/ss/}
+
+super + e
+	dmenuemoji
 
 ################
 #No ando usando bspwm, quiza borre esto luego

@@ -1,11 +1,10 @@
 "~/.config/nvim/init.vim
 
 call plug#begin('~/.config/nvim/plugged')
-
 "Snippets tool
 Plug 'sirver/ultisnips'
-    let g:UltiSnipsExpandTrigger = '<tab>'
-    let g:UltiSnipsJumpForwardTrigger = '<tab>'
+    let g:UltiSnipsExpandTrigger = '<C-tab>'
+    let g:UltiSnipsJumpForwardTrigger = '<C-tab>'
     let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 "TeX support
@@ -49,7 +48,7 @@ Plug 'ncm2/ncm2-path'
 "Plug 'gaalcaras/ncm-R'
 
 "Syntax
-Plug 'othree/yajs.vim'
+"Plug 'othree/yajs.vim'
 
 "Files tree
 Plug 'scrooloose/nerdtree'
@@ -67,7 +66,6 @@ Plug 'arcticicestudio/nord-vim'
 "Indent guides
 Plug 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_enable_on_vim_startup = 1
-
 call plug#end()
 
 "conceal
@@ -126,3 +124,7 @@ colorscheme nord
 
 "terminal normal
 tnoremap <Esc> <C-\><C-n>
+
+"autocompletion tab
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
