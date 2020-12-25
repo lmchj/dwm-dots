@@ -276,7 +276,7 @@ snippet htmll "HTML basic structure with the lang attribute" b
 <html lang="${1:es}">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>${2:`!p snip.rv = snip.basename.replace('-', ' ').capitalize()`}</title>
 	</head>
 	<body>
@@ -386,9 +386,7 @@ snippet option "Option" w
 endsnippet
 
 snippet p "paragraph" w
-<p>
-${0:${VISUAL}}
-</p>
+<p>${0:${VISUAL}}</p>
 endsnippet
 
 snippet picture "<picture>"
@@ -531,62 +529,6 @@ endsnippet
 
 snippet wbr "<wbr>" w
 <wbr>$1</wbr>
-endsnippet
-
-snippet comm "Comment tag" b
-<!-- $1 -->
-endsnippet
-
-##########
-# MATHML #
-##########
-
-snippet imath "Inline mathematics" b
-<math display=inline>
-	$1 
-</math>
-endsnippet
-
-snippet bmath "Block mathematics" b
-<math display=block>
-	$1 
-</math>
-endsnippet
-
-snippet mrow "Row to group mathematics" b
-<mrow>
-	$1 
-</mrow>
-endsnippet
-
-snippet mi "Identifier" w
-<mi>$1</mi>
-endsnippet
-
-snippet mo "Operator" w
-<mo>$1</mo>
-endsnippet
-
-snippet mn "Numeric" w
-<mn>$1</mn>
-endsnippet
-
-snippet msub "Subscript" b
-<msub>
-	$1
-</msub>
-endsnippet
-
-snippet msup "Superscript" b
-<msup>
-	$1
-</msup>
-endsnippet
-
-snippet mfrac "The worst" b
-<mfrac>
-	$1
-</mfrac>
 endsnippet
 
 # vim:ft=snippets:

@@ -1,7 +1,9 @@
 #!/bin/sh
 [ $(pamixer --get-mute) = true ] && echo 🔇 && exit
+#[ $(amixer get Master | tail -n 1 | grep -o '\[off\]') ] && echo 🔇 && exit
 
 vol="$(pamixer --get-volume)"
+#vol="$(amixer get Master | grep -m 1 % | awk '{print $5}'| sed 's/[^0-9]//g')"
 
 if [ "$vol" -gt "70" ]; then
 	icon="🔊"

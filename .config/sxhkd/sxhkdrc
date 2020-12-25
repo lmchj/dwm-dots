@@ -14,15 +14,19 @@ super + p
 
 XF86MicMute
 	pamixer -t --source 0
+	#amixer set Capture toggle
 
 XF86AudioMute
 	pamixer -t; pkill -RTMIN+10 dwmblocks
+	#amixer set Master toggle; pkill -RTMIN+10 dwmblocks
 
 XF86AudioLowerVolume
 	pamixer --allow-boost -d 5; pkill -RTMIN+10 dwmblocks
+	#amixer set Master 5%-; pkill -RTMIN+10 dwmblocks
 
 XF86AudioRaiseVolume
 	pamixer --allow-boost -i 5; pkill -RTMIN+10 dwmblocks
+	#amixer set Master 5%+; pkill -RTMIN+10 dwmblocks
 
 #XF86AudioMicMute
 
