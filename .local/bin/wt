@@ -1,0 +1,10 @@
+#!/bin/sh
+
+CH=`env TZ=America/Chihuahua date`
+TR=`env TZ=Europe/Rome date`
+LD=`env TZ=Europe/London date`
+MX=`env TZ=America/Mexico_City date`
+echo "Chihuahua -------------> $CH"
+echo "Ciudad de Mexico ------> $MX"
+echo "Leeds -----------------> $LD"
+echo "Torino ----------------> $TR"
