@@ -28,8 +28,7 @@ snippet template "Basic template" b
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage[$0]{babel}
-\usepackage{amsmath, amssymb}
-
+\usepackage{amsmath, amssymb, amsthm}
 
 % figure support
 \usepackage{import}
@@ -42,10 +41,40 @@ snippet template "Basic template" b
 	\import{./figures/}{#1.pdf_tex}
 }
 
+\usepackage[
+backend=biber,
+style=alphabetic
+]{biblatex}
+\addbibresource{../notes-bib.bib}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}{Lemma}[section]
+\newtheorem{prp}{Proposition}[section]
+
+\theoremstyle{definition}
+\newtheorem{dfn}{Definition}[section]
+\newtheorem{exa}{Example}[section]
+\newtheorem{exe}{Exercise}[section]
+
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem{case}{Case}
+
 \pdfsuppresswarningpagegroup=1
 
+\title{$0}
+\author{$0}
+
 \begin{document}
+	\maketitle
+	\tableofcontents
+	\newpage
 	$0
+
+	\printbibliography[Title={Referencias}]
 \end{document}
 endsnippet
 
