@@ -31,16 +31,16 @@ XF86AudioRaiseVolume
 #XF86AudioMicMute
 
 XF86AudioStop
-	mpc stop
+	playerctl stop
 
 XF86AudioPlay
-	mpc toggle
+	playerctl play-pause
 
 XF86AudioPrev
-	mpc prev
+	playerctl previous
 
 XF86AudioNext
-	mpc next
+	playerctl next
 
 XF86ScreenSaver
 	xscreensaver-command --lock

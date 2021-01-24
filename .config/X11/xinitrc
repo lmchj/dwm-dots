@@ -14,6 +14,7 @@ xwallpaper --output all --zoom $(find $HOME/img/wallpapers/ | shuf -n 1) &
 dunst &
 xscreensaver -no-splash &
 xmodmap .config/X11/xmodmap &
+mpDris2 &
 
 #dwm loop
 while true; do
