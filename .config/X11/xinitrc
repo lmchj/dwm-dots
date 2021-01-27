@@ -9,11 +9,14 @@ dwmblocks &
 #xbindkeys &
 sxhkd &
 redshift &
-xwallpaper --output all --zoom $(find $HOME/img/wallpapers/ | shuf -n 1) &
 #keepassxc &
 dunst &
+setxkbmap -layout gb,us -variant intl,intl -option grp:alt_space_toggle
+#xrandr --output LVDS1 --mode 1440x900 --pos 0x663 --rotate normal --output DP1 --primary --mode 1920x1080 --pos 1440x0 --rotate normal --output DP2 --off --output DP3 --off --output HDMI1 --off --output HDMI2 --off --output HDMI3 --off --output VGA1 --off --output VIRTUAL1 --off &
+#~/.screenlayout/lap-mon.sh &
+xwallpaper --output all --zoom $(find $HOME/img/wallpapers/ | shuf -n 1) &
 xscreensaver -no-splash &
-xmodmap .config/X11/xmodmap &
+xmodmap ~/.config/X11/xmodmap &
 mpDris2 &
 
 #dwm loop
