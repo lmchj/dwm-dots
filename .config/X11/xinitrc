@@ -26,6 +26,3 @@ done
 
 # The WM or DE is the last thing to execute
 exec dwm
-#exec spectrwm
-#!/bin/sh
-# ~/.xprofile

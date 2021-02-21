@@ -32,7 +32,7 @@ export EDITOR="nvim"
 # Terminal
 export TERM="termite"
 # Web browser
-export BROWSER="firefox"
+export BROWSER="librewolf"
 # Document reader
 export READER="zathura"
 # File browser
@@ -123,7 +123,11 @@ alias irssi='irssi --config="$XDG_CONFIG_HOME"/irssi/config --home="$XDG_DATA_HO
 #alias lmaoadd='function _() { pacman -S $1 && echo -e "$(tr ' ' '\n' $1)"; }; _ >> rep/lmao/ppacman.txt'
 #alias daur='function _() { echo "Clonando repositorio..." && cd $HOME/prg/aur/ && git clone https://aur.archlinux.org/$1.git && cd $HOME/prg/aur/$1 && echo "Construyendo e instalando..." && makepkg -si; }; _'
 
-# x server
+#x server (dwm)
 if [[ "$(tty)" = "/dev/tty1" ]]; then
 	pgrep dwm || startx "$XDG_CONFIG_HOME/X11/xinitrc"
 fi
+##x server (gnome)
+#if [[ -z $DISPLAY && $(tty) == /dev/tty1 ]]; then
+#  XDG_SESSION_TYPE=x11 GDK_BACKEND=x11 exec startx "$XDG_CONFIG_HOME/X11/xinitrc"
+#fi
