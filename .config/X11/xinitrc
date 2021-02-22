@@ -8,7 +8,6 @@ dwmblocks &
 sxhkd &
 redshift &
 dunst &
-setxkbmap -layout gb,us -variant intl,intl -option grp:alt_space_toggle
 xwallpaper --output all --zoom $(find $HOME/img/wallpapers/ | shuf -n 1) &
 xscreensaver -no-splash &
 xmodmap ~/.config/X11/xmodmap &
