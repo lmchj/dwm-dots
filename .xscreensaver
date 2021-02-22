@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.44 for elem on Wed Jan  6 15:51:58 2021.
+# Written by xscreensaver-demo 5.44 for elem on Sun Feb 21 23:45:56 2021.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:25:00
@@ -35,7 +35,7 @@ chooseRandomImages: False
 imageDirectory:	
 
 mode:		one
-selected:	88
+selected:	50
 
 textMode:	file
 textLiteral:	XScreenSaver
