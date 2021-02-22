@@ -110,9 +110,6 @@ alias mount-hdd='sudo mount -U 2699CF1C708EBDE8 && echo "Disco duro externo mont
 alias repos='. repos'
 alias notas='. notas'
 
-# workarounds
-alias obs='LIBGL_ALWAYS_SOFTWARE=1 obs'
-
 # Clean up
 alias abook='abook --config "$XDG_CONFIG_HOME"/abook/abookrc --datafile "$XDG_DATA_HOME"/abook/addressbook'
 alias mbsync='mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc'
