@@ -10,7 +10,7 @@ super + shift + Return
 	termite
 
 super + p
-	dmenu_run -m 0
+	dmenu_run
 
 XF86MicMute
 	pamixer -t --source 0

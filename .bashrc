@@ -69,6 +69,8 @@ export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 
 # Dot files git track
 alias dots='/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME'
+# Xorg config git track
+alias xgit='/usr/bin/git --git-dir=$HOME/.xorg-config/ --work-tree=/etc/X11/xorg.conf.d'
 
 # Colorful commands
 alias ls='ls --color=auto'
