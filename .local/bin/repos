@@ -1,9 +1,9 @@
 #!/bin/sh
 printf "Mis repositorios personales.\nBuilds y programas en desarrollo.\\n"
 
-ls -drc ~/rep/*/ | grep -o '[a-z]*\/$' |  nl
-read -erp "Selecciona un repo por su numero o presiona ctrl-c para cancelar. " num
-chosen="$(ls -rc ~/rep/ | nl | grep -w $num | grep -o '[a-z]*')"
+ls -d ~/rep/*/ | grep -o '[a-z]*\/$' |  nl
+read -erp "Selecciona un repo por su numero o presiona ctrl-c para cancelar. Presiona enter para ir a ~/repos. " num
+chosen="$(ls ~/rep/ | nl | grep -w $num | grep -o '[a-z]*')"
 printf "\t\e[1;31m$chosen\e[m\n"
 cd ~/rep/"$chosen"/
 ls

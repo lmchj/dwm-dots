@@ -12,6 +12,11 @@ xwallpaper --output all --zoom $(find $HOME/img/wallpapers/ | shuf -n 1) &
 xscreensaver -no-splash &
 xmodmap ~/.config/X11/xmodmap &
 mpDris2 &
+xsetwacom set 14 MapToOutput DP1 &
+
+#gnome keyring
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
 
 #dwm loop
 while true; do
