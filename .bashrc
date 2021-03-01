@@ -62,6 +62,7 @@ export TERMINFO="$XDG_DATA_HOME/terminfo"
 export TERMINFO_DIRS="$XDG_DATA_HOME/terminfo:/usr/share/terminfo"
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+export MAXIMA_USERDIR="$XDG_CONFIG_HOME/maxima"
 
 ###########
 # ALIASES #
