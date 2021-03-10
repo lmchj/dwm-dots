@@ -51,6 +51,9 @@ XF86Sleep
 XF86Battery
 	loginctl hybernate && xsecurelock
 
+XF86Display
+	$HOME/.screenlayout/lap.sh && xwallpaper --output all --zoom $(find $HOME/img/wallpapers/ | shuf -n 1)
+
 XF86Calculator
 	qalculate-gtk
 
