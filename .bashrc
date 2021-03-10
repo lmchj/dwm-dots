@@ -49,6 +49,13 @@ export NNN_FIFO=/tmp/nnn.fifo
 # Kvantum
 export QT_STYLE_OVERRIDE=kvantum
 
+# XSecureLock
+export XSECURELOCK_SAVER=saver_xscreensaver xsecurelock
+export XSECURELOCK_AUTH_SOUNDS=1
+export XSECURELOCK_PASSWORD_PROMPT=emoticon
+export XSECURELOCK_FONT=IBMPlexMono
+export XSECURELOCK_NO_COMPOSITE=1
+
 # Cleaning ~/
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"

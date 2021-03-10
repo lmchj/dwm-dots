@@ -43,7 +43,13 @@ XF86AudioNext
 	playerctl next
 
 XF86ScreenSaver
-	xscreensaver-command --lock
+	xsecurelock
+
+XF86Sleep
+	loginctl suspend || xsecurelock
+
+XF86Battery
+	loginctl hybernate && xsecurelock
 
 XF86Calculator
 	qalculate-gtk
