@@ -46,10 +46,10 @@ XF86ScreenSaver
 	xsecurelock
 
 XF86Sleep
-	loginctl suspend || xsecurelock
+	loginctl suspend || xscreensaver-command -lock
 
 XF86Battery
-	loginctl hybernate && xsecurelock
+	loginctl hybernate && xscreensaver-command -lock
 
 XF86Display
 	$HOME/.screenlayout/lap.sh && xwallpaper --output all --zoom $(find $HOME/img/wallpapers/ | shuf -n 1)
