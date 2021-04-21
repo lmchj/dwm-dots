@@ -8,11 +8,12 @@ dwmblocks &
 sxhkd &
 redshift &
 dunst &
-xwallpaper --output all --zoom $(find $HOME/img/wallpapers/ | shuf -n 1) &
+#xwallpaper --output all --zoom $(find $HOME/img/wallpapers/ | shuf -n 1) &
+xwallpaper --output all --zoom $HOME/img/wallpapers/good_vibes.jpg
 xscreensaver -no-splash &
 xmodmap ~/.config/X11/xmodmap &
 mpDris2 &
-xsetwacom set 14 MapToOutput DP1 &
+#xsetwacom set 14 MapToOutput DP1 &
 
 #gnome keyring
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
