@@ -126,7 +126,7 @@ alias mbsync='mbsync -c "$XDG_CONFIG_HOME"/isync/mbsyncrc'
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 alias irssi='irssi --config="$XDG_CONFIG_HOME"/irssi/config --home="$XDG_DATA_HOME"/irssi'
 
-#x server (dwm)
-if [[ "$(tty)" = "/dev/tty1" ]]; then
-	pgrep dwm || startx "$XDG_CONFIG_HOME/X11/xinitrc"
-fi
+##x server (dwm)
+#if [[ "$(tty)" = "/dev/tty1" ]]; then
+#	pgrep dwm || startx "$XDG_CONFIG_HOME/X11/xinitrc"
+#fi
